@@ -1,0 +1,22 @@
+uma petshop com banho e tosa que também tem veterinários para consultas.
+
+tutor
+cada tutor pode ter mais que um animal
+
+animal
+cada animal só tem um tutor
+um animal pode consultar ou tomar banho
+um animal só pode consultar com os veterinarios
+e so pode tomar banho com os funcionarios dessa categoria
+
+animal_banho
+um animal pode tosar ou nao o pelo
+
+consulta
+consultas sao diferenciadas pela sua data
+consultas podem gerar ou nao uma prescriçao
+
+medicamentos
+deve ter o preço, nome e bula
+
+é preciso também salvar as informações dos tipos de funcionario
