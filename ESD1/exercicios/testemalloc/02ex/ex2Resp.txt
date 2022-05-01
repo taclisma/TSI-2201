@@ -1,0 +1,9 @@
+Com base no código disponível no moodle, responda:
+a -  quantos bytes o vetor alunos ocupa? dica: use sizeof
+	sizeof alunos: 8
+
+b - quantos bytes uma variável do tipo aluno ocupa?
+	sizeof var tipo aluno: 324
+
+c - quanto de memória (em bytes) foi alocado para este programa?
+	quant memoria alocada por 5 variáveis do tipo aluno: 1620
