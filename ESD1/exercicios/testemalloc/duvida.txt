@@ -1,0 +1,2 @@
+ex3
+no sair fazer um laço para limpar todos os indices de agenda
