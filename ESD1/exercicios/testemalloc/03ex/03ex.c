@@ -14,15 +14,36 @@ Não esqueça de liberar a memória no final do programa, antes de sair.
 
 typedef struct{
     char nome[20];
-    // char telefone[9];
-    // char celular[10];
-    // char endereço[120];
-    // char aniversario[6];
+    char telefone[9];
+    char celular[10];
+    char endereço[120];
+    char aniversario[6];
 } contato;
 
 void inserir(contato* ag){
     printf("\ndigite o nome: \n");
     gets(ag->nome);
+
+    printf("\ndigite o telefone: \n");
+    gets(ag->telefone);
+
+    printf("\ndigite o celular: \n");
+    gets(ag->celular);
+
+    printf("\ndigite o endereço: \n");
+    gets(ag->endereço);
+
+    printf("\ndigite o aniversario: \n");
+    gets(ag->aniversario);
+}
+
+void ver(contato* ag){
+    
+    printf("nome: %s \n", ag->nome);
+    printf("telefone: %s \n", ag->telefone);
+    printf("celular: %s \n", ag->celular);
+    printf("endereço: %s \n", ag->endereço);
+    printf("aniversario: %s \n", ag->aniversario);
 }
 
 int main (){
@@ -30,7 +51,7 @@ int main (){
     contato *agenda[100];
 
     do{
-        printf("bem vindo a sua agenda, escolha uma opçao:\n");
+        printf("\nbem vindo a sua agenda, escolha uma opçao:\n");
         printf("1 - inserir\n2 - visualizar\n3 - sair\n");
         scanf("%i", &m);getchar();
 
@@ -40,24 +61,39 @@ int main (){
             // inserir
             // pego agenda, typecast ponteiro para contato (contato*), faz malloc
             agenda[c] = (contato*)malloc(sizeof(contato));
-            inserir(agenda[c]);
-            c++;
-            break;
+            if (agenda[c] != 0){
+                inserir(agenda[c]);
+                c++;
+            } else {
+                printf("erro na alocação");
+            }
+        break;
+            
         
         case 2:
-            // visualizar();
-            break;
+            printf("qual dos %i contatos deseja visualizar?\n", c);
+            scanf("%i",&i);getchar();
+            if(i > c){
+                printf("contato vazio\n");
+            } else {
+                ver(agenda[i-1]);
+            }
+        break;
         
         case 3:
-            break;
+        //sair
+        break;
         
         default:
             printf("\nescolha uma opção valida\n");
-            break;
+        break;
         }
 
 
     } while (m != 3);
     
+    //por que isso aqui da problema
+    //warning: ‘free’ called on unallocated object ‘agenda’
     free(agenda);
+    agenda = NULL;
 }

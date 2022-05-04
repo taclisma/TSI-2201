@@ -1,0 +1,16 @@
+##filas
+
+atv 01
+
+Descrever (em portugues ou como preferir) as funções de inserção e remoção da fila;
+``O elemento é inserido na primeira posição do vetor e ponteiro deixa de apontar para fora do vetor da pilha e "sobe" para esta posição. Na remoção o ponteiro apenas desce para a posição anterior.
+
+Pesquisar problema da "Fila cheia vazia" . Descreva o que é. Como resolver?
+``é o problema gerado quando ao fim de um ciclo de encher e esvaziar a fila, tanto a condição para fila cheia quanto a de fila vazia são verdadeiras. 
+
+
+Descrever em portugues as operações PUSH e POP, indicar os erros que podem acontecer. O que é: Stack overflow e stack underflow?
+
+``push checa se a pilha esta cheia, e se não estiver, adiciona um elemento na pilha e o aponta como topo. stack overflow seria o erro gerado por tentar inserir em uma pilha cheia.
+
+``pop checa se a pilha está vazia, e caso nao esteja, ela armazena o valor apontado por topo, decrementa o ponteiro topo, e retorna o valor armazenado. stack underflow é o erro gerado ao tentar remover de uma pilha vazia
