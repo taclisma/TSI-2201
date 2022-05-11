@@ -16,7 +16,7 @@ typedef struct{
     char nome[20];
     char telefone[9];
     char celular[10];
-    char endereço[120];
+    char endereco[120];
     char aniversario[6];
 } contato;
 
@@ -30,8 +30,8 @@ void inserir(contato* ag){
     printf("\ndigite o celular: \n");
     gets(ag->celular);
 
-    printf("\ndigite o endereço: \n");
-    gets(ag->endereço);
+    printf("\ndigite o endereco: \n");
+    gets(ag->endereco);
 
     printf("\ndigite o aniversario: \n");
     gets(ag->aniversario);
@@ -42,7 +42,7 @@ void ver(contato* ag){
     printf("nome: %s \n", ag->nome);
     printf("telefone: %s \n", ag->telefone);
     printf("celular: %s \n", ag->celular);
-    printf("endereço: %s \n", ag->endereço);
+    printf("endereco: %s \n", ag->endereco);
     printf("aniversario: %s \n", ag->aniversario);
 }
 
@@ -82,6 +82,9 @@ int main (){
         
         case 3:
         //sair
+            for(i = 0; i<c; i++){
+                free(agenda[i]);
+            }
         break;
         
         default:
@@ -94,6 +97,6 @@ int main (){
     
     //por que isso aqui da problema
     //warning: ‘free’ called on unallocated object ‘agenda’
-    free(agenda);
-    agenda = NULL;
+    //resp: era só fazer um loop no sair pra poder liberar o espaço de cada espaço alocado
+
 }
