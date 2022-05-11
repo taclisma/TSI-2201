@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Cliente
+comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Cliente\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
+comment1.params=nome\ registro\ telefone\ endereco\ seguroFianca
+comment1.target=Cliente(java.lang.String,\ java.lang.String,\ java.lang.String,\ Endereco,\ double)
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Cliente\n
+comment2.params=seguro
+comment2.target=void\ setSeguroFianca(double)
+comment2.text=\n\ \ \ \ \ \ \ \ metodos\ get\ e\ set\n
+comment3.params=
+comment3.target=double\ getSeguroFianca()
+numComments=4

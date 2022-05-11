@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Cliente
+comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Cliente\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
+comment1.params=nome\ cpf
+comment1.target=Cliente(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Cliente\n
+comment2.params=
+comment2.target=java.lang.String\ getNomeCliente()
+comment3.params=
+comment3.target=java.lang.String\ getCpf()
+comment4.params=nome
+comment4.target=void\ setNomeCliente(java.lang.String)
+numComments=5

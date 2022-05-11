@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Pessoa
+comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Pessoa\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
+comment1.params=nome\ registro\ telefone\ endereco
+comment1.target=Pessoa(java.lang.String,\ java.lang.String,\ java.lang.String,\ Endereco)
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Pessoa\n
+comment2.params=nome
+comment2.target=void\ setNome(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=registro
+comment4.target=void\ setRegistro(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getRegistro()
+comment6.params=endereco
+comment6.target=void\ setEndereco(Endereco)
+comment7.params=
+comment7.target=Endereco\ getEndereco()
+comment8.params=telefone
+comment8.target=void\ setTelefone(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ getTelefone()
+numComments=10

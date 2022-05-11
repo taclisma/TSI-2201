@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Casa
+comment1.params=norte\ sul\ leste\ oeste\ telhado
+comment1.target=Casa(Parede,\ Parede,\ Parede,\ Parede,\ Telhado)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

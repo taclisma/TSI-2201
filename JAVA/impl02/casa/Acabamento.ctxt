@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Acabamento
+comment1.params=tipo\ cor
+comment1.target=Acabamento(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getCor()
+comment3.params=cor
+comment3.target=void\ setCor(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getTipo()
+comment5.params=tipo
+comment5.target=void\ setTipo(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

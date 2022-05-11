@@ -1,0 +1,16 @@
+https://www.ic.unicamp.br/~vanini/mc302/lab2.pdf
+
+
+abstract => 
+`nao pode ser instanciada
+`é caracterizada pela presença de um metodo abstrato
+``um metodo abstrato é só uma assinatura que deve ser sobrescrito nas classsese filhas
+
+psv inserir(contaBancaria cb1){ ... } < = isso permite criar qualquer tipo de conta
+
+exercitando classe abstrata no cod base do segundo exercicio
+protected = publico so pra classes filhas/herdeiras (desde que no mesmo pacote)
+metodo sacar sobrescrito nas classes contacorrente e contapoupança
+
+se uma classe abstrata, filha de outra classe abstrata, nao implementar um metodo abstrato da sua classe mãe, essa classe precisa ser implementada pela primeira classe "concreta" filha
+

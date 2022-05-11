@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Telhado
+comment1.params=material\ area
+comment1.target=Telhado(java.lang.String,\ double)
+comment2.params=material
+comment2.target=void\ setMaterial(java.lang.String)
+comment3.params=area
+comment3.target=void\ setArea(double)
+comment4.params=
+comment4.target=java.lang.String\ getMaterial()
+comment5.params=
+comment5.target=double\ getArea()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

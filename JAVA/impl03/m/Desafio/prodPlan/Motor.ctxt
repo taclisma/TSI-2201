@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Motor
+comment0.text=\r\n\ \r\n
+comment1.params=cod\ nome\ valor\ potencia\ corrente\ rpm
+comment1.target=Motor(int,\ java.lang.String,\ double,\ double,\ double,\ int)
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ Motor\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=public\ double\ calculaValor(){\r\n\ \ \ \ \ \ \ \ return\ valor;\r\n}
+numComments=3
