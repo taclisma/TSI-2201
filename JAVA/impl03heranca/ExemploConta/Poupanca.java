@@ -19,20 +19,12 @@ public class Poupanca extends Conta
          this.dataRendimento = dataRendimento;
     }
 
-    public void sacar(double valor){
-        if(valor <= saldo){
-            saldo -= valor;
-        } else {
-            System.out.println("saldo insuficiente");
-        }
-    }
-    
-    //criar getters e setters
+   //criar getters e setters
    
     public String toString(){
         return (super.toString() + "\nData Rendimento = " + dataRendimento);
     }
-
+    
     public void render (){
         //implementar esse código
     }

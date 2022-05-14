@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Corrente
+comment0.text=\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ Corrente\ aqui.\n\ \n\ @author\ (seu\ nome)\ \n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\n
+comment1.params=cliente\ agencia\ numero\ valor
+comment1.target=Corrente(Cliente,\ int,\ int,\ double)
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Corrente\n
+comment2.params=novoLimite
+comment2.target=void\ setLimiteNegativo(double)
+comment3.params=
+comment3.target=double\ getLimiteNegativo()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

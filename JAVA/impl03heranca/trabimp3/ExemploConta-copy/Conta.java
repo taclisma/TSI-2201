@@ -45,6 +45,14 @@ public class Conta
         this.saldo -= valor;
     }
     
+    public void transferir(Conta transfere, Conta recebe, double valor){
+        if(transfere.saldo<valor){
+            System.out.println("saldo insuficiente");
+        }else{
+            recebe.saldo += valor;
+            transfere.saldo -= valor;
+        }
+    }
     public String toString(){
         return ("Cliente: " + cliente.getNomeCliente() +
                 "\nCPF: " + cliente.getCpf() +

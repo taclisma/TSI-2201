@@ -69,7 +69,7 @@ int main() {
 	    		printf("Informe a posi��o que deseja excluir um elemento\n");
 				scanf("%d", &posicao);
 			
-				if(lista[posicao] == NULL){
+				if(posicao >= ocupados){
 					printf("Posi��o vazia! \n");
 				} else {
 					for(i = posicao; i <= ocupados+1; i++){
@@ -99,16 +99,18 @@ int main() {
 		        printf("\n\t Posi��o\t");
 		        for(i=0; i < MAX; i++){
 					printf("\t%d", i);
-					printf(" | ");
+					printf("|");
 				}
 				printf("\n\t Elemento\t");
 		        for(i=0; i < MAX; i++){
-					if(lista[i] == NULL){
+					if(i > ocupados-1){
 						printf("\tx");
 					} else {
 						printf("\t%d", lista[i]);
 					}
-					printf(" | ");
+					if(i<10){
+						printf("|");
+					} else{printf("|");}
 				}
 		    break;
 	    

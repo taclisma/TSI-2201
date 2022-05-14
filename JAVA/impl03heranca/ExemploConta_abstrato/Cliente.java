@@ -1,26 +1,24 @@
 
 /**
- * Escreva uma descrição da classe Cliente aqui.
+ * Escreva a descrição da classe Cliente aqui.
  * 
  * @author (seu nome) 
- * @version (um número da versão ou uma data)
+ * @version (número de versão ou data)
  */
 public class Cliente
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private String nomeCliente;
     private String cpf;
 
     /**
-     * Construtor para objetos da classe Cliente
+     * COnstrutor para objetos da classe Cliente
      */
-    public Cliente(String nome, String cpf){
-        // inicializa variáveis de instância
+    public Cliente(String nome, String cpf)
+    {
         this.nomeCliente = nome;
         this.cpf = cpf;
     }
 
-    //getter
     public String getNomeCliente(){
         return nomeCliente;
     }
@@ -29,13 +27,12 @@ public class Cliente
         return cpf;
     }
     
-    //setter
     public void setNomeCliente(String nome){
         this.nomeCliente = nome;
     }
     
     public String toString(){
-        return ("nome cliente: " + nomeCliente +
-                "\nCPF: " + cpf);
+        return ("Nome do cliente = " + nomeCliente +
+                 "\nCPF = " + cpf);
+        }
     }
-}

@@ -1,19 +1,20 @@
 
 /**
- * Escreva uma descrição da classe Corrente aqui.
+ * Escreva a descrição da classe ContaCorrente aqui.
  * 
  * @author (seu nome) 
- * @version (um número da versão ou uma data)
+ * @version (número de versão ou data)
  */
-public class Corrente extends Conta
+public class ContaCorrente extends Conta
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private double limiteNegativo;
 
     /**
-     * Construtor para objetos da classe Corrente
+     * COnstrutor para objetos da classe ContaCorrente
      */
-    public Corrente(Cliente cliente, int agencia, int numero, double valor){
+    public ContaCorrente(Cliente cliente, int agencia, int numero, double valor)
+    {
         super(cliente, agencia, numero, valor);
         this.limiteNegativo = 100;
     }
@@ -27,6 +28,6 @@ public class Corrente extends Conta
     }
     
     public String toString(){
-        return (super.toString() + "\nLimite negativo: " + limiteNegativo);
+        return (super.toString() + "\nLimite Negativo = " + limiteNegativo);
     }
 }
