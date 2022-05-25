@@ -28,7 +28,13 @@ void push(int p[], int *t, int valor){
 	}
 }
 
+//esse no ex tb retorna um status
+int pop(int p[], int *t){
+	
+}
+
 int main (){
+	//-1 = pilha vazia
 	int topo = -1;
 	int p[N] = {0};
 	int valor = 1, i;
