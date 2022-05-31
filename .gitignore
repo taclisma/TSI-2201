@@ -1,3 +1,7 @@
 #ignora repositorios de cpw2 criados separadamente
 cpw2/repos/
 cpw2/prints/
+
+#livro de sql
+BD1/SQL/sql-p-bd-EduardoGoncalves.pdf
+BD1/SQL/sql-p-bd-EduardoGoncalves.xopp
