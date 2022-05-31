@@ -1,3 +1,5 @@
+-- NAO EXISTE OPERADORES DE AGREGAÇAO NA CLAUSULA WHERE (SUM, AVG, MIN / MAX, COUNT)
+
 -- teste 1
 -- vai contar todas as linhas
 select count(*)
