@@ -1,11 +1,7 @@
--- NAO EXISTE OPERADORES DE AGREGAÇAO NA CLAUSULA WHERE (SUM, AVG, MIN / MAX, COUNT)
-
 -- teste 1
--- vai contar todas as linhas
 select count(*)
 from funcionario;
 
--- se tiver null nao vai contar
 select count(id_departamento)
 from funcionario;
 
@@ -33,14 +29,13 @@ select * from funcionario;
 
 select id_departamento,avg(salario)
 from funcionario
-group by id_departamento; --FORMA GRUOP por departamento
---group by id_departamento, salario; <criaria grupos de (id=id dep=dep);
+group by id_departamento;
 
 -- teste 4
-select d.nome,avg(salario)
+select nome,avg(salario)
 from funcionario f inner join departamento d
 on f.id_departamento = d.id_departamento
-group by nome; -- se tira isso n funciona tem que agrupar as coisa macaco
+group by nome;
 
 -- Por que deu erro?
 
