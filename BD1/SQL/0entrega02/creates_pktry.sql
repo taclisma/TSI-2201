@@ -1,7 +1,7 @@
 /* petshop01logico: */
 ----------CREATE
 CREATE TABLE animal(
-    id_animal NUMBER constraint pk_animal PRIMARY KEY ON DELETE CASCADE,
+    id_animal NUMBER constraint pk_animal PRIMARY KEY,
     nome VARCHAR(15),
     tamanho VARCHAR(20), --trocar por peso ou porte?
     raca VARCHAR(16),
@@ -9,7 +9,7 @@ CREATE TABLE animal(
 );
 
 CREATE TABLE pessoa (
-    id_pessoa NUMBER constraint pk_pessoa PRIMARY KEY ON DELETE CASCADE,
+    id_pessoa NUMBER constraint pk_pessoa PRIMARY KEY,
     nome VARCHAR(30),
     endereco VARCHAR(50)
 );
@@ -37,9 +37,9 @@ CREATE TABLE banho (
 CREATE TABLE consulta (
     data_consulta DATE,
     id_animal FK_id_animal_consulta
-    REFERENCES animal (id_animal) ON DELETE CASCADE,
-    id_veterinario NUMBER ,
-    constraint PK_constulta PRIMARY KEY(data_consulta, id_animal) ON DELETE CASCADE
+    REFERENCES animal (id_animal),
+    id_veterinario NUMBER,
+    constraint PK_constulta PRIMARY KEY(data_consulta, id_animal)
 );
 
 CREATE TABLE medicacao (
@@ -53,15 +53,15 @@ CREATE TABLE medicacao (
     ---adicionei o id_animal -- invalid dadatype no live
 CREATE TABLE prescricao (
     cod_medicamento FK_cod_medicamento 
-    REFERENCES medicacao (cod_medicamento) ON DELETE CASCADE,
+    REFERENCES medicacao (cod_medicamento),
 
     data_consulta FK_data_presc 
-    REFERENCES consulta (data_consulta) ON DELETE CASCADE,
+    REFERENCES consulta (data_consulta),
 
     id_animal FK_id_animal_presc 
-    REFERENCES animal (id_animal) ON DELETE CASCADE,
+    REFERENCES animal (id_animal),
     
-    constraint PK_presc PRIMARY KEY(data_consulta, id_animal) ON DELETE CASCADE
+    constraint PK_presc PRIMARY KEY(data_consulta, id_animal)
 );
 
 -------------------ALTER
