@@ -1,11 +1,11 @@
-DROP TABLE animal;
-DROP TABLE pessoa;
-DROP TABLE veterinario;
-DROP TABLE funcionario;
-DROP TABLE banho;
-DROP TABLE consulta;
-DROP TABLE medicacao ;
-DROP TABLE prescricao;
+DROP TABLE animal cascade CONSTRAINTS;
+DROP TABLE pessoa cascade CONSTRAINTS;
+DROP TABLE veterinario cascade CONSTRAINTS;
+DROP TABLE funcionario_banho cascade CONSTRAINTS;
+DROP TABLE banho cascade CONSTRAINTS;
+DROP TABLE consulta cascade CONSTRAINTS;
+DROP TABLE medicacao cascade CONSTRAINTS;
+DROP TABLE prescricao cascade CONSTRAINTS;
 
 
 --------- sequences 
