@@ -1,7 +1,7 @@
 /* petshop01logico: */
 ----------CREATE
 CREATE TABLE animal(
-    id_animal NUMBER constraint pk_animal PRIMARY KEY,
+    id_animal NUMBER constraint pk_animal PRIMARY KEY ON DELETE CASCADE,
     nome VARCHAR(15),
     tamanho VARCHAR(20), --trocar por peso ou porte?
     raca VARCHAR(16),
@@ -9,7 +9,7 @@ CREATE TABLE animal(
 );
 
 CREATE TABLE pessoa (
-    id_pessoa NUMBER constraint pk_pessoa PRIMARY KEY,
+    id_pessoa NUMBER constraint pk_pessoa PRIMARY KEY ON DELETE CASCADE,
     nome VARCHAR(30),
     endereco VARCHAR(50)
 );
@@ -38,8 +38,8 @@ CREATE TABLE consulta (
     data_consulta DATE,
     id_animal FK_id_animal_consulta
     REFERENCES animal (id_animal) ON DELETE CASCADE,
-    id_veterinario NUMBER,
-    constraint PK_constulta PRIMARY KEY(data_consulta, id_animal)
+    id_veterinario NUMBER ,
+    constraint PK_constulta PRIMARY KEY(data_consulta, id_animal) ON DELETE CASCADE
 );
 
 CREATE TABLE medicacao (
@@ -61,7 +61,7 @@ CREATE TABLE prescricao (
     id_animal FK_id_animal_presc 
     REFERENCES animal (id_animal) ON DELETE CASCADE,
     
-    constraint PK_presc PRIMARY KEY(data_consulta, id_animal)
+    constraint PK_presc PRIMARY KEY(data_consulta, id_animal) ON DELETE CASCADE
 );
 
 -------------------ALTER
