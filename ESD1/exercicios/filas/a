@@ -1,0 +1,24 @@
+
+
+/**
+ * Escreva uma descrição da classe mIN aqui.
+ * 
+ * @author (seu nome) 
+ * @version (um número da versão ou uma data)
+ */
+class Boo {
+
+  private int x;
+  public Boo(int x){ this.x = x; }
+ }
+ 
+ class Foo { 
+  private Boo b;
+  public Foo(Boo b){ this.b = b; }
+  public boolean equals (XXXXXXX obj){
+     YYYYYYYYYY;
+     if (ZZZZZZZZ) return true;
+     return false;
+  }
+ } 
+}

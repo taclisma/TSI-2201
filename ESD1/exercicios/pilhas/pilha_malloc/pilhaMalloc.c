@@ -12,7 +12,7 @@ Criar uma pilha encadeada em C
 
 #include <stdlib.h>
 #include <stdio.h>
-
+#include "pilha.h"
 #define N 3
 
 typedef struct{
@@ -38,9 +38,6 @@ int main (){
 	// aponta topo para vazio
     p.topo = NULL;
     
-    for(i = 0; i<3; i++){
-    	p.topo = (no*)malloc(sizeof(no))
-	}
     
 
 }
