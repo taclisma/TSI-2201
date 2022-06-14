@@ -88,7 +88,7 @@ ALTER TABLE prescricao add(
     FOREIGN KEY (data_consulta) REFERENCES consulta (data_consulta),
 
     constraint FK_presc_id_animal
-    FOREIGN KEY (id_animal) REFERENCES animal (id_animal)
+    FOREIGN KEY (id_animal) REFERENCES consulta (id_animal)
     );
 --------------SEQUENCES
 CREATE SEQUENCE s_pessoa start with 100 nocache;
