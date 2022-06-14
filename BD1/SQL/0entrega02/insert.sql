@@ -28,6 +28,8 @@ VALUES(s_animal.nextval, 'atlas', 'grande', 'dogue alemao', '101');
 insert into animal(id_animal,nome, tamanho, raca, id_pessoa) 
 VALUES(s_animal.nextval, 'lulu', 'medio', 'collie', '102');
 
+insert into animal(id_animal,nome, tamanho, raca, id_pessoa) 
+VALUES(s_animal.nextval, 'tirry', 'medio', 'vira lata', '102');
 
 -----------------
 
