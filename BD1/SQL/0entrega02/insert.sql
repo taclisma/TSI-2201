@@ -82,5 +82,12 @@ insert into prescricao(cod_medicamento, data_consulta, id_animal)
 VALUES(502, to_date('02/05/22','dd/mm/yy'), 203);
 
 insert into prescricao(cod_medicamento, data_consulta, id_animal)
-VALUES(501, to_date('03/07/22','dd/mm/yy'), 200);
+VALUES(501, to_date('03/07/22','dd/mm/yy'), 201);
+
+insert into prescricao(cod_medicamento, data_consulta, id_animal)
+VALUES(501, to_date('07/02/22','dd/mm/yy'), 202);
+
+insert into prescricao(cod_medicamento, data_consulta, id_animal)
+VALUES(501, to_date('05/02/22','dd/mm/yy'), 203);
+
 ----------------------
