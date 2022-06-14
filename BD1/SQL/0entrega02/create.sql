@@ -1,4 +1,5 @@
 /* petshop01logico: */
+
 ----------CREATE
 CREATE TABLE animal(
     id_animal NUMBER constraint pk_animal PRIMARY KEY,
@@ -28,12 +29,12 @@ CREATE TABLE funcionario_banho (
 CREATE TABLE banho (
     id_animal NUMBER,
     id_funcionario NUMBER,
-    ---tosa BOOLEAN,
-    data_banho DATE PRIMARY KEY
+    tosa VARCHAR(1),
+    data_banho DATE
 );
 
 CREATE TABLE consulta (
-    data_consulta DATE PRIMARY KEY,
+    data_consulta DATE,
     id_animal NUMBER,
     id_veterinario NUMBER
 );
@@ -44,11 +45,11 @@ CREATE TABLE medicacao (
     nome_med VARCHAR(40));
 --    bula BLOB(10M));
 
+    --- adicionei id animal
 CREATE TABLE prescricao (
-    cod_medicamento NUMBER,
+    id_animal NUMBER,
     data_consulta DATE,
-    --- add id animal
-    id_animal NUMBER
+    cod_medicamento NUMBER
 );
 
 -------------------ALTER
@@ -62,7 +63,9 @@ ALTER TABLE banho add(
     FOREIGN KEY(id_animal) REFERENCES animal (id_animal),
  
     constraint FK_banho_id_funcionario 
-    FOREIGN KEY (id_funcionario) REFERENCES funcionario_banho (id_funcionario)
+    FOREIGN KEY (id_funcionario) REFERENCES funcionario_banho (id_funcionario),
+
+    constraint PK_banho PRIMARY KEY (id_animal, data_banho)
     );
 
 ALTER TABLE consulta add(
@@ -70,15 +73,22 @@ ALTER TABLE consulta add(
     FOREIGN KEY (id_animal) REFERENCES animal (id_animal),
 
     constraint FK_consulta_id_funcionario 
-    FOREIGN KEY (id_veterinario) REFERENCES veterinario (id_veterinario)
+    FOREIGN KEY (id_veterinario) REFERENCES veterinario (id_veterinario),
+
+    constraint PK_consulta PRIMARY KEY (id_animal, data_consulta)
     );
 
 ALTER TABLE prescricao add(
+    constraint PK_presc PRIMARY KEY(data_consulta, id_animal),
+
     constraint FK_cod_medicamento
     FOREIGN KEY (cod_medicamento) REFERENCES medicacao (cod_medicamento),
 
     constraint FK_data_consulta
-    FOREIGN KEY (data_consulta) REFERENCES consulta (data_consulta)
+    FOREIGN KEY (data_consulta) REFERENCES consulta (data_consulta),
+
+    constraint FK_presc_id_animal
+    FOREIGN KEY (id_animal) REFERENCES animal (id_animal)
     );
 --------------SEQUENCES
 CREATE SEQUENCE s_pessoa start with 100 nocache;
