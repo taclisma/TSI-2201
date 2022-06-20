@@ -4,17 +4,17 @@
 // typedef struct{
 //     char nome[100];
 //     char email[150];
-//     char fone[15];
+//     char cpf[15];
 // }contato;
 
-typedef struct{
+typedef struct tno{
         // contato dado; 
-		int dado; //para teste
-        struct no* prox;//próximo nó 
-        struct no* prev;//próximo nó 
+        char dado[3]; //para teste
+        struct tno* prox;//próximo nó 
+        struct tno* prev;//próximo nó 
 }tno; /* tipo do nó */
 
-typedef struct{
+typedef struct tList{
         tno* first;
         tno* last;
         int size;
@@ -30,17 +30,17 @@ int vazia(tList *f);
 int tamanho(tList *f);
 
 //Inserir um elemento na lista conforme ordem ALFABÉTICA
-int inserir(tList *f, int d);
+int inserir(tList *f, char d[]);
+
+//Imprimir a lista
+void imprimeFila(tList *f);
 
 //Obter o valor do elemento de uma posição dada
 
 //Obter a posição de elemento cujo valor é dado
 
 //Remover um elemento de uma determinada posição
-int remover(tList *f, int *d);
-
-//Imprimir a lista
-void imprimeFila(tList *f);
+int remover(tList *l, char rem[]);
 
 
-int soma(int a, int b);
+//int soma(int a, int b);

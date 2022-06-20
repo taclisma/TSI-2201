@@ -5,6 +5,11 @@
 int main(){
 	printf("\n");
 	int num;
+	char a[3] = "aa";
+	char b[3] = "bb";
+	char c[3] = "cc";
+	char d[3] = "dd";
+
 
 	tList *lista = (tList*) malloc(sizeof (tList));
 	inicializar(lista);
@@ -12,15 +17,17 @@ int main(){
 
 	//checar se esta vazia
 	num = vazia(lista);
-	if (num != 0){
+	if (num == 0){
 		printf("lista vazia\n");
 	}
 	//checar tamanho
-	printf("%d \n",tamanho(lista));
 	printf("\n");
 
+	inserir(lista, d);
+	inserir(lista, c);
+	inserir(lista, b);
+	inserir(lista, a);
 
-
-	free (lista);
+	imprimeFila(lista);
 	return 0;
 }
