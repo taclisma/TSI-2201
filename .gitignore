@@ -2,6 +2,9 @@
 cpw2/repos/
 cpw2/prints/
 
+#ignora repo de java q tem o trab com o puski
+JAVA/0trab02
+
 #livro de sql
 BD1/SQL/sql-p-bd-EduardoGoncalves.pdf
 BD1/SQL/sql-p-bd-EduardoGoncalves.xopp
