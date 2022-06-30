@@ -10,6 +10,13 @@ int main(int argc, char** argv)
 	inicioFim *InFim = (inicioFim*) malloc(sizeof (inicioFim));
 
 	contato pessoa;
+				strcpy(pessoa.nome, "maria");
+				strcpy(pessoa.email, "maria@email.com");
+				strcpy(pessoa.cpf, "123");
+	contato pessoa2;
+				strcpy(pessoa2.nome, "mario");
+				strcpy(pessoa2.email, "mario@email.com");
+				strcpy(pessoa2.cpf, "234");
 	proximoAnterior no;
 	
 	inicializar(InFim);
@@ -25,13 +32,18 @@ int main(int argc, char** argv)
 		switch(opcao){
 			case 1:
 				printf("Informe o nome\n");
-				scanf(" %[^\n]s", pessoa.nome);
+				//scanf(" %[^\n]s", pessoa.nome);
+				scanf(" %s", pessoa.nome);
 				printf("Informe o e-mail\n");
 				scanf("%s", pessoa.email);
 				printf("Informe o cpf\n");
 				scanf("%s", pessoa.cpf);
 				inserir(InFim, pessoa);
+			break;
 				
+			case 2: inserir(InFim,pessoa);
+			break;
+			case 3: inserir(InFim,pessoa2);
 			break;
 			case 4:
 				imprimeFila(InFim);
