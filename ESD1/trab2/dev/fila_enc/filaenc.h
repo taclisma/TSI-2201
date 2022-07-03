@@ -29,4 +29,6 @@ int inserir(inicioFim *InFim, contato dado);
 
 void imprimeFila(inicioFim *InFim);
 
+int remover(inicioFim *InFim, int pos);
 
+int consultar(inicioFim *InFim, int pos);
