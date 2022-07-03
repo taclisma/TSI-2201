@@ -203,3 +203,15 @@ int consultar(inicioFim *InFim, int pos){
 	cont = 1;
 	}
 }
+
+void liberaLista(inicioFim *InFim){
+	lista aux, aux2 = NULL;
+
+	aux = InFim->inicio;
+
+	while(aux!=NULL){
+		aux2 = aux->proximo;
+		free(aux);
+		aux = aux2;
+	}
+}

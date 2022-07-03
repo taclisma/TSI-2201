@@ -50,6 +50,10 @@ int main(int argc, char** argv)
 			case 4:
 				imprimeFila(InFim);
 			break;
+			
+			case 5:
+				//sair
+			break;
 
 			default:
 				printf("\nopção invalida\n");
@@ -57,6 +61,7 @@ int main(int argc, char** argv)
 		}		
 	}while(opcao!=5);
 	
+	liberaLista(InFim);
 	
 	return 0;
 }

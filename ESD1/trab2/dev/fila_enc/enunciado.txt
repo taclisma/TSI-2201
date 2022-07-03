@@ -17,6 +17,11 @@ d- Listar os itens da lista; (Percorrer a lista). Sugestão: quando listar todos
 1 - descrever em Português (no vídeo) o processo que deve acontecer em cada um dos itens (a,b,c,d);
 2 - descrever quais problemas podem ocorrer nos itens (a,b,c,d); (se houver);
 3 - descrever (pelo menos) um caso de teste para cada item (a,b,c,d) que permitam saber se estes estão funcionando adequadamente;
-4 – demonstrar inserção de (pelo menos 5 elementos), demonstrando inserções no começo, meio e final;
-5 – demonstrar remoção de (pelo menos 3 elementos), demonstrando remoções no começo, meio e final;
-6 - demonstrar outras situações com possibilidade de erros.
+-- 4 – demonstrar inserção de (pelo menos 5 elementos), demonstrando inserções no começo, meio e final;
+-- 5 – demonstrar remoção de (pelo menos 3 elementos), demonstrando remoções no começo, meio e final;
+ 6 - demonstrar outras situações com possibilidade de erros.
+    -- mesmo cpf (ok)
+    -- remover de lista vazia (ok)
+    -- remover de posições que nao existem (ok, tem q gravar)
+    -- consultar de posiao que nao existe (ok, tem q gravar)
+    -- 
